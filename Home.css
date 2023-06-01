@@ -1,0 +1,842 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Maven Pro', sans-serif;
+}
+.header{
+    min-height:82vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bgturtle.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display:inline-block;
+    padding: 10px 14px;
+    position:relative;
+}
+.nav-links ul li a
+{
+    color:honeydew;
+    text-decoration: none;
+    font-size: 20px; 
+
+}
+.nav-links ul li::after
+{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #00e6e6;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width:100%;
+}
+.text-box
+{
+   width:90%;
+   color:#fff ;
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1
+{
+    font-size: 65px; 
+    margin-bottom: 2%;
+}
+.text-box p
+{
+    margin: 10px 0 40px;
+    font-size:  20px;
+    color: #fff;
+    line-height: 30px;
+}
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover
+{
+    border: 1px solid #48AAAD;
+    background:#48AAAD;
+    transition:1s;
+}
+nav .fa
+{
+    display: none;
+}
+
+@media(max-width:700px)
+{
+    .header nav img
+    {
+        width: 125px;
+    }
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+    .text-box p
+    {
+        margin: 10px 0 40px;
+        font-size:  14px;
+        line-height: 20px;
+    }
+    .hero-btn
+    {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+    .nav-links ul li
+    {
+        display:block ;
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: #111417;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa
+    {
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul
+    {
+        padding:30px ;
+    }
+}
+
+/*--------Species of Turles in Sri Lanka--------*/
+
+.species
+{
+    min-height:65vh;
+    width:100%;
+    position: relative;
+    padding-top: 2%;
+    text-align: center;
+    background-color: #016964;
+}
+.text-box2
+{
+   width:90%;
+   color:#fff ;
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.species h1
+{
+    font-size: 65px;
+    margin-bottom: 3%;
+    font-weight: 600;
+    color: #fff;
+}
+.species-row
+{
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}    
+.species-col 
+{
+    width: 90%;
+    flex-basis: 50%;
+    background: transparent ;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.species-col p
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 20px;
+}
+.species-col img
+{
+    border-radius: 8px;
+    max-width: 85%;
+    max-height: 85%;
+}
+.species-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.species-btn:hover
+{
+    border: 1px solid #48AAAD;
+    background:#48AAAD;
+    transition:1s;
+}
+@media(max-width:700px)
+{
+    .species-row
+    {
+        flex-direction: column;
+    }
+    .species-col 
+    {
+        flex-basis: 60%;
+        background: transparent;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        padding: 10px 6px;
+        box-sizing: border-box;
+    }
+    .species h1
+    {
+        font-size: 20px;
+    }
+    .species-col p
+    {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .species-col img
+    {
+        border-radius: 8px;
+        max-width: 75%;
+        max-height:75%;
+    }   
+    .species-btn
+    {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+}
+
+/*--------Threats to Turles in Sri Lanka--------*/
+
+.threats
+{
+    width: 100%;
+    min-height: 65vh;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ocean.jpg);
+    
+}
+.textbox3
+{
+    width: 90%;
+    text-align: center;
+    margin-left:5%;
+}
+.threats h1
+{
+    font-size: 65px;
+    margin-bottom: 2%;
+    font-weight: 600;
+    color: #fff;
+}
+.threats p
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 20px;
+}
+.threats-row
+{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+} 
+.threats-col
+{
+    flex-basis: 45%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+.threats-col img
+{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.threats-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.threats-btn:hover
+{
+    border: 1px solid #48AAAD;
+    background:#48AAAD;
+    transition:1s;
+}
+@media(max-width:700px)
+{
+    .threats-row
+    {
+        flex-direction: column;
+    }
+    .threats-col 
+    {
+        flex-basis: 60%;
+        margin-bottom: 2%;
+        padding: 10px 6px;
+        box-sizing: border-box;
+    }
+    .threats h1
+    {
+        font-size: 20px;
+    }
+    .threats p
+    {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .threats-col img
+    {
+        width: 75%;
+        height:75%;
+    }   
+    .threats-btn
+    {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+}
+/*--------Turtle Hatcheries in Sri Lanka--------*/
+
+.hatcheries
+{
+    height: 130vh;
+    width: 100%;
+    margin: auto;
+    text-align:center;
+    padding-top: 50px;
+    background-color: #151e30;
+}
+.textbox4
+{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.hatcheries h1
+{
+    margin-top: 1%;
+    padding: 20px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+}
+.hatcheries p
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 20px;
+}
+.hatch-row
+{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.hatch-col
+{
+    flex-basis: 32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+}
+.hatch-col img
+{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+.layer
+{
+    background:transparent;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+.layer:hover
+{
+    background: rgba(21, 30, 48,0.5);
+}
+.layer h3
+{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    border: 2px solid #fff ;
+    padding: 12px 34px;
+    background: transparent;
+    cursor: pointer;
+    width: 40%;
+    font-weight: 900;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s; 
+}
+.layer:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.hatcheries-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hatcheries-btn:hover
+{
+    border: 1px solid #48AAAD;
+    background:#48AAAD;
+    transition:1s;
+}
+@media(max-width:700px)
+{
+    .hatcheries
+    {
+        height: 285vh;
+        width: 100%;
+    }
+    .hatcheries h1
+    {
+        margin-top: 1%;
+        font-size: 20px;
+    }
+    .hatcheries p
+    {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .hatcheries-btn
+    {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+    .hatch-row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .hatch-col img
+    {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .layer
+    {
+        background:transparent;
+        height: 100%;
+        width:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        transition: 0.5s;
+    }
+    .layer:hover
+    {
+        background: rgba(21, 30, 48,0.5);
+    }
+    .layer h3
+    {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 20px;
+        color: #fff;
+        border: 2px solid #fff ;
+        padding: 12px 34px;
+        background: transparent;
+        cursor: pointer;
+        width: 40%;
+        font-weight: 500;
+        color:#fff;
+        font-size: 25px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        transition: 0.5s;
+       
+    }
+    .layer:hover h3
+    {
+        bottom: 49%;
+        opacity: 1;
+    }
+}
+
+/*------------------------Donations------------------------*/
+
+.donate
+{
+    min-height:80vh;
+    width:100%;
+    position: relative;
+    padding-top: 2%;
+    text-align: center;
+    background-color: #111417;
+}
+.donations
+{
+   width:90%;
+   color:#fff ;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.donate h1
+{
+    font-size: 65px;
+    margin-bottom: 3%;
+    font-weight: 600;
+    color: #fff;
+}
+.donate-row
+{
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}    
+.donate-col 
+{
+    width: 90%;
+    flex-basis: 50%;
+    background: transparent ;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.donate-col p
+{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 20px;
+}
+.donate-col img
+{
+    border-radius: 8px;
+    width: 500px;
+    height: 400px;
+}
+.donate-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+    border: 1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.donate-btn:hover
+{
+    border: 1px solid #48AAAD;
+    background:#48AAAD;
+    transition:1s;
+}
+@media(max-width:700px)
+{
+    .donate
+    {
+        width: 100%;
+        height: 90vh;
+
+    }
+    .donate-row
+    {
+        flex-direction: column;
+    }
+    .donate-col 
+    {
+        flex-basis: 40%;
+        background: transparent;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        padding: 10px 6px;
+        box-sizing: border-box;
+    }
+    .donate h1
+    {
+        font-size: 20px;
+    }
+    .donate-col p
+    {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 5px;
+        margin-bottom: 2%;
+    }
+    .donate-col img
+    {
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+    }   
+    .donate-btn
+    {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+}
+
+
+/*------------------------Footer------------------------*/
+
+body 
+{
+    background: #111417;
+}
+footer
+{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right,#48AAAD,#016964,#022D36);
+    color: #fff;
+    padding: 75px 0 30px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top:10px;
+}
+.footer-row
+{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col
+{
+    flex-basis: 20%;
+    padding: 15px;
+    padding-top:10px;
+}
+.logo
+{
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.footer-col h3
+{
+    width: fit-content;
+    margin-top: 20px;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.phone i
+{
+    font-size: 18px;
+    margin-right: 10px; 
+}
+.email
+{
+    width:fit-content;
+    border-bottom: 1px solid #ccc;
+}
+.email i
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.facebook i
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.instagram i
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: #fff; 
+}
+hr
+{
+    width: 90%;
+    border: 0;
+    border-bottom:1px solid #fff;
+    margin :20px auto;
+}
+.copyryt
+{
+    text-align: center;
+}
+.underline
+{
+   width: 100%;
+   height: 5px;
+   background: #151E30; 
+   border-radius: 3px;
+   position: absolute;
+   top: 25px;
+   left: 0;
+   overflow: hidden;
+}
+.underline span
+{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving
+{
+    0%
+    {
+        left: -20px;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}
+@media (max-width: 700px)
+{
+    .footer
+    {
+        bottom: unset;
+    }
+    .footer-col
+    {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+  
+  
+
+    
+
+
+
+
